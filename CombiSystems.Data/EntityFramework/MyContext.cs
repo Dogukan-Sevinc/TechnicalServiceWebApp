@@ -2,6 +2,7 @@
 using CombiSystems.Data.Identity;
 using CombiSystems.Core.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace CombiSystems.Data.EntityFramework;
 
