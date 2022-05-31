@@ -1,5 +1,6 @@
 ﻿using CombiSystems.Business.Services.Email;
 using CombiSystems.Core.Emails;
+using CombiSystems.Core.Identity;
 using CombiSystems.Data.Identity;
 using CombiSystems.Web.ViewModels;
 using Microsoft.AspNetCore.Authorization;

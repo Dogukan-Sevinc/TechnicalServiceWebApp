@@ -1,9 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using CombiSystems.Data;
 using CombiSystems.Web.Extensions;
-using CombiSystems.Data.Identity;
-using Microsoft.AspNetCore.Identity;
-
+using CombiSystems.Data.EntityFramework;
 
 var builder = WebApplication.CreateBuilder(args);
 var con1 = builder.Configuration.GetConnectionString("con1");

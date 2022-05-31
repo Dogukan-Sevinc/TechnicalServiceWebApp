@@ -1,6 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using CombiSystems.Business.MappingProfiles;
+using CombiSystems.Business.Repositories;
+using CombiSystems.Business.Repositories.Abstracts;
+using CombiSystems.Business.Services.Email;
 using CombiSystems.Core.Entities;
-
+using CombiSystems.Data.EntityFramework;
+using CombiSystems.Data.Identity;
 
 namespace CombiSystems.Web.Extensions
 {
