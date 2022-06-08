@@ -1,0 +1,93 @@
+﻿@model RegisterViewModel
+@{
+    Layout = null;
+}
+<html>
+
+<head>
+    <partial name="Partials/_HeadPartial" />
+</head>
+
+
+
+<body class="inner_page login">
+    <div class="full_container">
+        <div class="container">
+            <div class="center verticle_center full_height">
+                <div class="login_section">
+                    <div class="logo_login">
+                        <div class="center">
+                            <img width="210" src="../../root/images/logo/fornax.svg" alt="#">
+                        </div>
+                    </div>
+                    <div class="login_form">
+                                <span class="text-danger mx-lg-5">@TempData["Message"]</span>
+                        <form asp-controller="Home" asp-action="Register" method="post">
+                            <fieldset>
+                                    <span class="text text-danger" asp-validation-for="Name"></span>
+                                <div class="field">
+                                    <input asp-for="Name" type="text" id="Name" class="label_field" placeholder="Name" />
+                                    <label class="label_field">Name</label>
+                                </div>
+
+                                    <span class="text text-danger" asp-validation-for="Surname"></span>
+                                <div class="field">
+                                    <input asp-for="Surname" type="text" id="Surname" class="label_field" placeholder="Surname" />
+                                    <label class="label_field">Surname</label>
+                                </div>
+
+                                    <span class="text text-danger" asp-validation-for="Email"></span>
+                                <div class="field">
+                                    <input asp-for="Email" type="email" id="Email" class="label_field" placeholder="E-mail" />
+                                    <label class="label_field">Email address</label>
+                                </div>
+
+                                    <span class="text text-danger" asp-validation-for="PhoneNumber"></span>
+                                <div class="field">
+                                    <input asp-for="PhoneNumber" type="text" id="PhoneNumber" class="label_field" placeholder="PhoneNumber" />
+                                    <label class="label_field">Phone Number</label>
+                                </div>
+
+                                    <span class="text text-danger" asp-validation-for="Adress"></span>
+                                <div class="field">
+                                    <input asp-for="Adress" class="label_field" id="Adress" rows="2" cols="100" placeholder="Adress" />
+                                    <label class="label_field">Adress</label>
+                                </div>
+
+                                    <span class="text text-danger" asp-validation-for="Password"></span>
+                                <div class="field">
+                                    <input asp-for="Password" type="password" id="Password" class="label_field" placeholder="Password" />
+                                    <label class="label_field" for="form2Example27">Password</label>
+                                </div>
+
+                                    <span class="text text-danger" asp-validation-for="ConfirmPassword"></span>
+                                <div class="field">
+                                    <input asp-for="ConfirmPassword" type="password" id="ConfirmPassword" class="label_field" placeholder="Confirm Password" />
+                                    <label class="label_field" for="form2Example27">ConfirmPassword</label>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label_field hidden">hidden label</label>
+                                    <a asp-controller="Home" asp-action="Login" class="forgot">Do yo have a account?</a>
+                                </div>
+
+
+                                <div class="field margin_0">
+                                    <label class="label_field hidden">hidden label</label>
+                                    <button type="submit" class="main_bt">Sing Up</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <partial name="Partials/_ScriptsPartial" />
+    <!-- EndScripts -->
+
+</body>
+
+</html>
