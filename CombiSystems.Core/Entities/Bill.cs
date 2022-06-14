@@ -13,7 +13,7 @@ public class Bill : BaseEntity<int>
     public bool PaymentStatus { get; set; } = false;
 
     public int AppointmentId { get; set; }
-
+    
     public Appointment? Appointment { get; set; }
     public IList<BillDetails>? BillDetails { get; set; }
 

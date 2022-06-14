@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CombiSystems.Core.Entities;
 
-public class BillDetails : BaseEntity<int>
+public class BillDetails: BaseEntity<int>
 {
     public int ProductId { get; set; }
     public decimal SalesAmount { get; set; }
