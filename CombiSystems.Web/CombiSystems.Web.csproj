@@ -7,14 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Content Remove="Properties\launchSettings.json" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<_WebToolingArtifacts Remove="Properties\launchSettings.json" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.5" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.5">
@@ -46,8 +38,11 @@
 		<None Include="Views\Shared\Partials\_SidebarPartial.cshtml" />
 		<None Include="Views\Shared\Partials\_TopbarPartial.cshtml" />
 		<None Include="Views\Shared\_Layout.cshtml" />
+		<None Include="Views\User\Appointment.cshtml" />
 		<None Include="Views\User\EditProfile.cshtml" />
+		<None Include="Views\User\Index.cshtml" />
 		<None Include="Views\User\Profile.cshtml" />
+		<None Include="Views\User\RoleChange.cshtml" />
 		<None Include="Views\_ViewImports.cshtml" />
 		<None Include="Views\_ViewStart.cshtml" />
 		<None Include="wwwroot\root\.DS_Store" />
@@ -89,6 +84,7 @@
 		<None Include="wwwroot\root\js\chart_custom_style2.js" />
 		<None Include="wwwroot\root\js\custom.js" />
 		<None Include="wwwroot\root\js\custom_chart.js" />
+		<None Include="wwwroot\root\js\GoogleMapsApp.js" />
 		<None Include="wwwroot\root\js\jquery-3.3.1.min.js" />
 		<None Include="wwwroot\root\js\jquery.fancybox.js" />
 		<None Include="wwwroot\root\js\jquery.fancybox.min.js" />
